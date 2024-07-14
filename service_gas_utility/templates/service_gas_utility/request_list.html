@@ -1,0 +1,18 @@
+<!-- Example template: service_gas_utility/templates/service_gas_utility/request_list.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Requests</title>
+</head>
+<body>
+    <h1>Service Requests</h1>
+    <ul>
+        {% for request in requests %}
+            <li>{{ request.request_type }} - {{ request.status }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
